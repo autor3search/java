@@ -103,6 +103,18 @@ Three things worth knowing before you start it:
   because a cold JVM reports interpreter timings rather than the speed of your
   code. Budget wall time accordingly; see [Run time](#run-time).
 
+### Or install it as a skill
+
+The same prompt ships as an agent skill, in
+[`skills/autor3search-java`](skills/autor3search-java/SKILL.md). Install it once and ask your
+agent to make the repository faster; it loads the prompt itself.
+
+```sh
+mkdir -p ~/.claude/skills/autor3search-java
+curl -fsSL https://raw.githubusercontent.com/autor3search/java/main/skills/autor3search-java/SKILL.md \
+  -o ~/.claude/skills/autor3search-java/SKILL.md
+```
+
 ## The idea
 
 You do not edit Java files to tune performance. You edit `program.md` — the
