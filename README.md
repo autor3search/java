@@ -46,6 +46,8 @@ paste this:
 Install and run autor3search-java on this repository, then optimize it.
 
 Setup:
+0. Run git status. If the working tree has changes, STOP and ask me to
+   commit or stash them first.
 1. Download the latest release jar and its launcher:
      mkdir -p ~/.local/bin
      curl -sSL -o ~/.local/bin/autor3search-java.jar \
