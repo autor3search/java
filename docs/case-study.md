@@ -3,6 +3,11 @@
 A real run of `autor3search-java` against a real, maintained, third-party Java
 library. Every number here was measured; nothing is illustrative.
 
+> **Update, 2026-11-03: this run counts as failed.** The changes were re-measured
+> on current upstream. Escape-heavy strings got 10–64% slower. The benchmarks in
+> this run missed these inputs. A slowdown on any real input counts as a failed
+> optimization, so these changes were not sent upstream.
+
 ## Setup
 
 | | |
